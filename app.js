@@ -32,9 +32,8 @@ const ratings = require('./public/data/nba2k.json')
 // *********************************************************** //
 
 const mongoose = require('mongoose');
-// const mongodb_URI = 'mongodb://localhost:27017/cpa02'
-const mongodb_URI = 'mongodb+srv://GuangyaoD:200130dole@cpa02.sx5qy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-//const mongodb_URI = 'mongodb+srv://cs_sj:BrandeisSpr22@cluster0.kgugl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const mongodb_URI = 'mongodb://localhost:27017/cpa02'
+
 
 mongoose.connect(mongodb_URI || 'mongodb://localhost:27017/cpa02', { useNewUrlParser: true, useUnifiedTopology: true });
 // fix deprecation warnings
