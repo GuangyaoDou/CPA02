@@ -14,6 +14,7 @@ const session = require("express-session"); // to handle sessions using cookies
 const debug = require("debug")("personalapp:server");
 const layouts = require("express-ejs-layouts");
 const axios = require("axios")
+const dotenv = require("dotenv").config()
 
 // *********************************************************** //
 //  Loading models
@@ -32,9 +33,7 @@ const ratings = require('./public/data/nba2k.json')
 // *********************************************************** //
 
 const mongoose = require('mongoose');
-// const mongodb_URI = 'mongodb://localhost:27017/cpa02'
-const mongodb_URI = process.env.MONGODB_URI || 'mongodb+srv://GuangyaoD:200130dole@cpa02.sx5qy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-
+const mongodb_URI = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cpa02.sx5qy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 mongoose.connect(mongodb_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 // fix deprecation warnings
 mongoose.set('useFindAndModify', false);
@@ -286,7 +285,7 @@ app.use(function(err, req, res, next) {
 //  Starting up the server!
 // *********************************************************** //
 //Here we set the port to use between 1024 and 65535  (2^16-1)
-const port = "8000";
+const port = process.env.PORT || "8000";
 app.set("port", port);
 
 // and now we startup the server listening on that port
