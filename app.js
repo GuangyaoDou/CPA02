@@ -16,6 +16,8 @@ const layouts = require("express-ejs-layouts");
 const axios = require("axios")
 const dotenv = require("dotenv").config()
 
+axios.get('https://nba-rating-search.herokuapp.com/', {})
+axios.post('https://nba-rating-search.herokuapp.com/', {})
 // *********************************************************** //
 //  Loading models
 // *********************************************************** //
