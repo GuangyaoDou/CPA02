@@ -32,10 +32,10 @@ const ratings = require('./public/data/nba2k.json')
 // *********************************************************** //
 
 const mongoose = require('mongoose');
-const mongodb_URI = 'mongodb://localhost:27017/cpa02'
+// const mongodb_URI = 'mongodb://localhost:27017/cpa02'
+const mongodb_URI = process.env.MONGODB_URI || 'mongodb+srv://GuangyaoD:200130dole@cpa02.sx5qy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
-
-mongoose.connect(mongodb_URI || 'mongodb://localhost:27017/cpa02', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(mongodb_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 // fix deprecation warnings
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
