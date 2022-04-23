@@ -1,0 +1,28 @@
+<div class="d-flex flex-wrap text-center overflow-scroll">
+    <% for (player of players){%>
+        <div class="p-3 m-3 border border-primary bg-light w-25">
+            <br>
+            <a href="/players/remove/<%= player._id %>">X</a>
+            <strong>
+                <%=player.full_name%>
+            </strong>
+            <div class="mb-1">
+                <%=player.team%>
+                    <%=player.jersey%>
+            </div>
+            <div class="mb-1">
+                Rating: <%=player.rating %>
+            </div>
+            <div class="mb-1">
+                Position: <%=player.position %>
+            </div>
+
+            <div class="mb-1">
+                Deaft Year: <%=player.draft_year %>
+                    Deaft Round: <%=player.draft_round %>
+                        Deaft Peak: <%=player.draft_peak %>
+            </div>
+            </br>
+        </div>
+        <% } %>
+</div>

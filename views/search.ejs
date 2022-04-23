@@ -1,0 +1,29 @@
+
+<body style="background-color: rgba(7, 73, 148, 0.736)">
+    <% if (true || loggedIn) {%>
+        <h1>Let's start searching</h1>
+        <form method="post" action="/players/byPlayer">
+            Show NBA player's information by name:
+            <input type="text" name="name" placeholder="e.g. LeBron James">
+            <input type="submit">
+        </form>
+
+        <form method="post" action="/players/byRating">
+            Show NBA player's information by their ratings:
+            <input type="text" name="rating" placeholder="e.g. 96">
+            <input type="submit">
+        </form>
+
+        <form method="post" action="/players/byRange">
+            Show NBA player's information whose rating is greater than:
+            <input type="text" name="range" placeholder="e.g. 80">
+            <input type="submit">
+        </form>
+
+        <form method="post" action="/players/byTeam">
+            Show NBA player's information by teams:
+            <input type="text" name="team" placeholder="e.g. Warriors">
+            <input type="submit">
+        </form>
+    <% } %>
+</body>

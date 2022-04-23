@@ -1,0 +1,58 @@
+<head>
+    <!-- Required Bootstrap meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        <%=player.full_name%>
+    </title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid" style="background-color: rgba(214, 220, 241, 0.446)">
+        <div class="container" style="color:rgb(15, 86, 148);">
+            <div><a href="/addPlayer/<%= player['_id'] %>">(add to your favourite players collections)</a></div>
+            <h1 class="display-4">
+                <%=player.full_name%>
+            </h1>
+            <h1>
+                <%=player.team%>
+                <%=player.jersey%>
+            </h1>
+            <span>
+                <p class="lead">Position: <%=player.position %>
+                </p>
+            </span>
+            <div class="mb-1">
+                <h3>Draft Information: </h3>
+                Deaft Year: <%=player.draft_year %>
+                    Deaft Round: <%=player.draft_round %>
+                        Deaft Peak: <%=player.draft_peak %>
+            </div>
+            <h3>Personal Information: </h3>
+            <div class="mb-1" style="font-size:20px;">
+                Birthday: <%=player.b_day %>,
+            </div>
+            <div class="mb-1" style="font-size:20px;">
+                Height: <%=player.height %>
+                Weight: <%=player.weight %>
+            </div>
+            <div class="mb-1" style="font-size:20px;">
+                Country: <%=player.country %>        
+            </div>
+            <div class="mb-1" style="font-size:20px;">
+                Salary:  $<%=player.salary %>     
+            </div>
+            <div class="mb-1" style="font-size:20px;">
+                College: <%=player.college %>   
+            </div>
+            <div class="mb-1" style="font-size:20px;">
+                Version: <%=player.version %>  
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-primary bg-blend-screen" style="background-image: url('https://cdn.nba.com/manage/2020/10/leaguev3-784x294.jpeg');
+              opacity: 0.9;
+              height: 27vh;">
+    </div>
+</body>
