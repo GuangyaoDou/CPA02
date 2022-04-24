@@ -2,7 +2,9 @@
 
 This web allows you to browse through all of the NBA players' information and their NBA 2k's ratings. You can even save your favourite players and compare them if you wish. 
 
-Here is the what the main page would look like:
+Here is the web link of this CPA: https://nba-rating-search.herokuapp.com/
+
+Here is the what the main page looks like:
 ![The Main Page](/screenshots/main_page.png)
 
 ## Nav Bar
@@ -29,7 +31,9 @@ You can view your favourite players in flexboxes. Also, you can remove your favo
 
 ## Installation
 Download the project from github and download nodejs and npm from https://nodejs.org
-and cd into the folder
+and cd into the folder.
+
+Make sure you replace the MongoDB URL, the secret key, and the PORT number before you start using this app.
 
 Install the packages with
 ``` bash
