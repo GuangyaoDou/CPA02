@@ -4,6 +4,10 @@ This web allows you to browse through all of the NBA players' information and th
 
 Here is the web link of this CPA: https://nba-rating-search.herokuapp.com/
 
+Here is a short movie for this CPA: https://brandeis.zoom.us/rec/share/vexjSKpGkH_BHPrS_2XaUG5siXoTPKjc88Tk_IsX_B_q0Y1L8Aei5iaVdJbdGyEM.bvleAWTN2awne2sJ?startTime=1651016588000
+
+## First Page
+
 Here is the what the main page looks like:
 ![The Main Page](/screenshots/main_page.png)
 
